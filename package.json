@@ -13,7 +13,7 @@
     "lint": "eslint src test",
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register --recursive",
     "test:watch": "NODE_ENV=test mocha --compilers js:babel-core/register --recursive --watch",
-    "prepublish": "npm run lint && npm run test && npm run clean && npm run build"
+    "prepublish": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
@@ -53,7 +53,7 @@
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0",
-    "redux-devtools-ie8": "^3.0.0"
+    "redux-devtools-ie8": "0.0.1"
   },
   "dependencies": {
     "babel-runtime": "^6.2.0",
